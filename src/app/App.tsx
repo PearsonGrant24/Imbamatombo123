@@ -1,39 +1,33 @@
 import React, {useEffect} from 'react';
 import RoutePath from './routes/RoutePath.tsx';
 import './assets/App.scss';
-import  Footer  from './components/layout/footer/Footer.tsx';
-import Header  from './components/layout/header/Header.tsx';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import  {Footer}  from './components/layout/footer/Footer.tsx';
+import {Header}  from './components/layout/header/Header.tsx';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './components/Home.tsx';
+import { basename } from 'path';
 
-// type AppProps = {
-//   basename: string
-// }
+type AppProps = {
+  basename: string
+}
 
-const App = () => {
-    
+//const App = () => {
+const App: React.FC<AppProps> = ({basename}) => {
     return (
-    
-      <BrowserRouter>
-          {/* <Header> */}
-            {/* <> */}
+    <>
+          <Header>
+            <>
                 {/*  Logo, Header navigation, Search   */}
-            {/* </>
-              div
-          </Header> */}
-          {/* <div className='page d-flex flex-row flex-column-fluid'> */}
-          <Header/>
-          {/* <Header/ */}
-          {/* <Route path = '/' element={() => <Home/>} /> */}
+            </>
+              
+          </Header>
           <RoutePath />
-          <Footer/>
-          {/* <Footer> */}
+          <Footer>
             <>
               {/*  Logo, Quick Links, Social Links, Subscribe, Copyrights   */}
             </>
-          {/* </Footer> */}
-          {/* </div> */}
-          </BrowserRouter>
+          </Footer>
+    </>
     
   );
   

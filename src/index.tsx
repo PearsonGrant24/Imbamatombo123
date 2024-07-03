@@ -11,14 +11,14 @@ ReactDOM.createRoot(
   document.getElementById('app') as HTMLElement
 ).render(
   <React.StrictMode>
-    {/* <BrowserRouter> */}
+    <BrowserRouter>
         {/* <Provider store={store}> */}
           {/* <AuthProvider> */}
-            {/* <App basename={''}  /> */}
-            <App/>
+            <App basename={'/'}  />
+            {/* <App /> */}
           {/* </AuthProvider> */}
         {/* </Provider> */}
-    {/* </BrowserRouter> */}
+    </BrowserRouter>
   </React.StrictMode>
 );
 

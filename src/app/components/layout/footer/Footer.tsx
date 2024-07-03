@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import {NavLink} from "react-router-dom";
 import SlidingPane from "react-sliding-pane";
+
 type FooterProps = {
     children: React.ReactNode;
 }
 
-export default function Footer() {
+export const Footer: React.FunctionComponent<FooterProps> = ({children, ...props}): any | null => {
 
     return (
         <>

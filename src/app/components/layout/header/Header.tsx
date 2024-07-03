@@ -7,8 +7,11 @@ import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import { useNavigate } from 'react-router-dom';
 
+type HeaderProps = {
+    children: React.ReactNode;
+}
 
-export default function Header() {
+export const Header:React.FunctionComponent<HeaderProps> = ({ children, ...props}) : any | null => {
 
 const navigate = useNavigate();
 
