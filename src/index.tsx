@@ -14,7 +14,7 @@ ReactDOM.createRoot(
     <BrowserRouter>
         {/* <Provider store={store}> */}
           {/* <AuthProvider> */}
-            <App basename={'/'}  />
+            <App basename={'PUBLIC_URL'}  />
             {/* <App /> */}
           {/* </AuthProvider> */}
         {/* </Provider> */}
